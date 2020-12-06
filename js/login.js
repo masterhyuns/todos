@@ -27,6 +27,7 @@ function displayLoginForm() {
  */
 function loginSubmitHandler(e) {
   e.preventDefault();
+  loginHandler();
 }
 
 /**
@@ -34,7 +35,7 @@ function loginSubmitHandler(e) {
  * @param e
  * @returns {boolean}
  */
-function loginHandler(e) {
+function loginHandler() {
   if (!USER_NAME) {
     const userName = userNameEl.value;
     if (!userName) {
