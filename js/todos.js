@@ -56,7 +56,6 @@ function drawingTodoGroups() {
 
 function toggleDoneHandler(e) {
   const todoId = e.target.dataset.id;
-  console.log(todoId);
   todos.map((group) => {
     group.todos.map((todo) =>
       todo.id === todoId ? (todo.done = !todo.done) : todo

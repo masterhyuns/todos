@@ -7,7 +7,6 @@ const LOGIN_CLASS = "login";
  * loading bar run
  */
 function runProgressBar() {
-  console.log("run");
   let progressValue = 3;
   progressEl.value = progressValue;
 

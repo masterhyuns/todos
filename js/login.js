@@ -12,7 +12,6 @@ const USER_NAME = getLocalStorage(LS_USER_NAME);
  */
 function displayLoginForm() {
   if (USER_NAME) {
-    console.log("aaa", USER_NAME);
     dpUserNameEl.innerText = USER_NAME;
     removeClass(welcomeEl, DP_NONE_CLASS);
     addClass(userNameEl, DP_NONE_CLASS);
