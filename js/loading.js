@@ -39,8 +39,8 @@ function imageLoading() {
   }
 }
 function loadingInit() {
-  imageLoading();
   setDisplayLoading();
+  imageLoading();
 }
 if (IS_FIRST) {
   loadingInit();
