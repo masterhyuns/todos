@@ -1,4 +1,3 @@
-const IMAGE_NUMBER = 13;
 const ACTIVE_CLASS = "active";
 const COORDS = "coords";
 const weather = document.querySelector(".js-weather");

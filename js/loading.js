@@ -2,7 +2,7 @@ const pageLoadingEl = document.querySelector(".page-loading");
 progressEl = pageLoadingEl.querySelector(".loading-bar");
 const LOADING_CLASS = "loading";
 const LOGIN_CLASS = "login";
-
+const IMAGE_NUMBER = 13;
 /**
  * loading bar run
  */
@@ -32,8 +32,14 @@ function setDisplayLoading() {
     removeClass(bodyEl, LOADING_CLASS);
   }
 }
-
+function imageLoading() {
+  for (let i = 1; i < IMAGE_NUMBER + 1; i++) {
+    let img = new Image();
+    img.src = `./images/bg/mac_bg_${i}.jpeg`;
+  }
+}
 function loadingInit() {
+  imageLoading();
   setDisplayLoading();
 }
 if (IS_FIRST) {
