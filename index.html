@@ -3,10 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <title>Todos</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
-<body>
+<body class="loading">
+    <div class="page-loading">
+        <img src="./images/mac_log_white.png" class="logo-image">
+        <progress class="loading-bar" value="0" max="100"></progress>
+    </div>
+    <div class="page-login">
+        <div class="profile-image">
 
-    <script src="./index.js"></script>
+        </div>
+        <form>
+            <input type="text" class="user-name" placeholder="이름을 입력해주세요">
+            <p class="welcome"><span class="dp-user-name"></span>님!! 환영합니다!!</p>
+        </form>
+        <button class="login-btn"></button>
+    </div>
+
+    <div class="workspace">
+        <div class="contents">
+            <div class="js-weather">
+                <p>현재온도 : <span class="current-temp">0</span></p>
+                <p>현재위치 : <span class="current-location"></span></p>
+            </div>
+            <div class="todo-summary">
+                <p>전체 : <span class="total-cnt">0</span></p>
+                <p>할일 : <span class="todo-cnt">0</span></p>
+                <p>완료 : <span class="finish-cnt">0</span></p>
+            </div>
+        </div>
+        <div class="menu-wrap">
+            <div class="menu">
+                <button class="btn alarm active"></button>
+            </div>
+        </div>
+    </div>
+    <div class="modal-box todo">
+        <div class="todo-box active">
+            <div class="group-area">
+                <div class="btn-group">
+                    <button class="close-btn"></button>
+                </div>
+                <div class="summary">
+                    <ul>
+                        <li>
+                            전체 : <span class="total-cnt">0</span>
+                        </li>
+                        <li>
+                            할일 : <span class="todo-cnt">0</span>
+                        </li>
+                        <li>
+                            완료 : <span class="finish-cnt">0</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="subject">
+                    그룹목록
+                </div>
+                <div class="group-list">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="group-add">
+                    <button class="group-add-btn">그룹추가하기 +</button>
+                </div>
+            </div>
+            <div class="todos-area">
+                <div class="list dp-none">
+                    <div class="todo-input-area">
+                        <div class="input-group">
+                            <form>
+                                <input type="text" placeholder="할일을 입력해주세요">
+                            </form>
+                        </div>
+                        <button class="add-todo-btn">🟢</button>
+                    </div>
+                    <div class="todo-list-todo">
+                        <div class="subject">할일</div>
+                        <div class="todo-list">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="todo-list-finish">
+                        <div class="subject">완료한일</div>
+                        <div class="todo-list">
+                            <ul>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="no-list">
+                    그룹 생성 또는 그룹을 선택해주세요.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/utils.js"></script>
+    <script src="./js/lsUtils.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/login.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/todos.js"></script>
 </body>
 </html>
