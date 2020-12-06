@@ -7,7 +7,7 @@ const API_KEY = "8dfaabf0bce650043c75f3a82a334fca";
 function loadingBackgroundImage() {
   setInterval(() => {
     const number = Math.floor(Math.random() * IMAGE_NUMBER) + 1;
-    bodyEl.style.backgroundImage = `url('../images/bg/mac_bg_${number}.jpeg')`;
+    bodyEl.style.backgroundImage = `url('./todos/images/bg/mac_bg_${number}.jpeg')`;
   }, 5000);
 }
 function getWeather(lat, lng) {
